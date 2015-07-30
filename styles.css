@@ -29,7 +29,7 @@ body {
 	text-align: center;
     line-height:30px;
 }
-.numbers h1, .operators h1, #clear_all, #clear_last, #equals {
+.numbers h1, .operators h1, #clear_all, #clear_last, #equals, #dot {
 	display: inline-block;
 	width: 30%;
 	background-color: #FE3F80;
@@ -41,4 +41,7 @@ body {
 }
 h1:hover, #clear_all:hover, #clear_last:hover, #equals:hover {
 	opacity: 1;
+}
+#equals {
+	width: 100%;
 }
