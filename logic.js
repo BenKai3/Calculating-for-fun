@@ -4,7 +4,7 @@ window.onload = function () {
 	var answer_screen = document.getElementById('screen');
 	var numbers = document.getElementsByClassName('number');
 	var operators = document.getElementsByClassName('operator');
-
+// CLEARING THE EQUATION/SCREEN/ANSWER HISTORY
 	document.getElementById('clear_last').onclick = function(){
 		answers.pop();
 		answer_screen.innerHTML = answers[answers.length-1];
@@ -19,6 +19,7 @@ window.onload = function () {
 		equation = "";
 		console.log('answers: '+answers);
 	};
+// RUNNING THE EQUATION
 	document.getElementById('equals').onclick = function(){
 		if (eval(equation) != undefined) {
 			answers.push(eval('equation: '+equation));
@@ -27,7 +28,7 @@ window.onload = function () {
 		answer_screen.innerHTML = answers[answers.length-1];
 		equation = "";
 	};
-	//BUILDING THE EQUATION
+//BUILDING THE EQUATION
 	for (var i = 0; i < numbers.length; i++) {
 		numbers[i].onclick = function(){
 			equation += this.innerHTML;

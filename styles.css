@@ -1,34 +1,44 @@
-.numbers h3, .operators h2 {
-	display: inline-block;
-	width: 30%;
-	background-color: #FF9E80;
-	color: #DADADA;
-	text-align: center;
-	padding: 20px 0px 20px 0px;
-	cursor: pointer;
+@font-face {
+	font-family: calculatorFont;
+	src: url(calculatorFonts/LCD_Solid.ttf);
 }
-h3.number {
-	background-color: #FF3D00;
+* {
+	font-family: calculatorFont;
 }
-.numbers{
-	background-color: #6A1B9A
+body {
+	background-color: #1CA9F0;
 }
-.operators{
-	background-color: #727272;
-}
-#screen{
-	border: 1px solid purple;
-	border-radius: 5px;
-	height: 60px;
+#calculator {
 	text-align: center;
 	vertical-align: middle;
 }
-#clear_all, #clear_last{
+#screen{
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 45px;
+	background-color: #B2E4FB;
+}
+.numbers{
+	background-color: #1588CD;
+	text-align: center;
+    line-height:30px;
+}
+.operators{
+	background-color: #1CA9F0;
+	text-align: center;
+    line-height:30px;
+}
+.numbers h1, .operators h1, #clear_all, #clear_last, #equals {
 	display: inline-block;
 	width: 30%;
-	background-color: #FF9E80;
-	color: #DADADA;
+	background-color: #FE3F80;
+	color: #FEFEFE;
 	text-align: center;
 	padding: 20px 0px 20px 0px;
 	cursor: pointer;
+	opacity: .5;
+}
+h1:hover, #clear_all:hover, #clear_last:hover, #equals:hover {
+	opacity: 1;
 }
